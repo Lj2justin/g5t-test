@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <rect width="64" height="64" rx="8" fill="#ffffff"/>
+  <g transform="translate(6 10)" fill="#0d6efd">
+    <path d="M18 0c1.1 0 2 .9 2 2v2h2c1.1 0 2 .9 2 2v2c0 1.1-.9 2-2 2h-2v2c0 1.1-.9 2-2 2h-2c-1.1 0-2-.9-2-2v-2h-2c-1.1 0-2-.9-2-2v-2c0-1.1.9-2 2-2h2V2c0-1.1.9-2 2-2h2zM6 18c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-2c0-1.1-.9-2-2-2H6z"/>
+  </g>
+  <g transform="translate(12 18)" fill="#17c3b2">
+    <path d="M0 18c0-4 4-8 10-8s10 4 10 8v6H0v-6z"/>
+  </g>
+</svg>

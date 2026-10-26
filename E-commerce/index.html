@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digishop - Vente de téléphones, ordinateurs et accessoires</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Digishop</a>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Accueil</a>
+                    <a href="telephones.html">Téléphones</a>
+                    <a href="ordinateurs.html">Ordinateurs</a>
+                    <a href="accessoires.html">Accessoires</a>
+                    <a href="about.html">À propos</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <form action="search.php" method="get" class="search-form">
+                        <input type="text" name="q" placeholder="Rechercher...">
+                        <button type="submit">🔍</button>
+                    </form>
+                    <a href="cart.php" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+                    <a href="login.php" class="account-icon">👤</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Bienvenue sur Digishop</h1>
+                    <p>Votre destination pour l'électronique de qualité</p>
+                    <p>Digishop est une plateforme e-commerce innovante spécialisée dans la vente          </p>
+                    <p>de téléphones, d'ordinateurs et d'accessoires informatiques. Pensée pour            </p>
+                    <p>répondre aux besoins technologiques des utilisateurs modernes, elle combine         </p>
+                    <p>rapidité, fiabilté et accessibilité. Grâce à une interface intutive, les clients    </p>
+                    <p>peuvent explorer un large cathologue de produits de qualité, allant des smartphones </p>
+                    <p>dernier cri aux périphérique essentiels comme les claviers, casques, disques durs,etc</p>
+                    <a href="category.php?cat=telephones" class="cta-button">Voir les offres</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="container">
+                <h2>Nos Catégories</h2>
+                <div class="category-grid">
+                    <a href="telephones.php" class="category-card">
+                        <div class="category-image">
+                            <img src="assets/img/phone.svg" alt="Téléphones" onerror="this.style.display='none'">📱
+                        </div>
+                        <h3>Téléphones</h3>
+                        <p>Smartphones et téléphones portables</p>
+                    </a>
+                    <a href="ordinateurs.php" class="category-card">
+                        <div class="category-image">
+                            <img src="assets/img/laptop.svg" alt="Ordinateurs" onerror="this.style.display='none'">💻
+                        </div>
+                        <h3>Ordinateurs</h3>
+                        <p>Portables et ordinateurs de bureau</p>
+                    </a>
+                    <a href="accessoires.php" class="category-card">
+                        <div class="category-image">
+                            <img src="assets/img/accessories.svg" alt="Accessoires informatiques">
+                        </div>
+                        <h3>Accessoires informatiques</h3>
+                        <p>Drones, routeurs, appareils de surveillance à distance, etc</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <div class="container">
+                <h2>Produits Populaires</h2>
+                <div class="product-grid" id="product-grid">
+                    <!-- Les produits seront chargés dynamiquement via PHP/JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>À propos de Digishop</h4>
+                    <p>Votre destination de confiance pour l'électronique.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Confidentialité</a></li>
+                        <li><a href="terms.html">CGV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Nous contacter</h4>
+                    <p>Email: contact@digishop.com</p>
+                    <p>Tél: +243 82 59 54 028</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

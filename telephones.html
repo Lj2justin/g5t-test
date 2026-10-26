@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Téléphones - Digishop</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Digishop</a>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="telephones.html" class="active">Téléphones</a>
+                    <a href="ordinateurs.html">Ordinateurs</a>
+                    <a href="accessoires.html">Accessoires</a>
+                    <a href="about.html">À propos</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="cart.php" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+                    <a href="login.php" class="account-icon">👤</a>
+                </div>
+                <!-- Mini-panier client-side -->
+                <div id="mini-cart" class="mini-cart" aria-hidden="true"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <div class="container">
+                <h1>Téléphones</h1>
+                <p class="lead">Smartphones et téléphones portables — découvrez nos meilleures offres.</p>
+            </div>
+        </section>
+
+        <section class="category-content">
+            <div class="container">
+                <p>Sur cette page vous trouverez les téléphones les plus populaires, classés par marque et prix. Pour la version dynamique avec filtres et ajout au panier, utilisez la page catégorie dynamique.</p>
+
+                <div class="product-grid">
+                    <!-- Chaque carte produit contient un bouton pour ajouter au panier (envoie vers add_to_cart.php?id=... ) -->
+                    <div class="product-card" data-product-id="101">
+                        <img class="product-image" src="assets/img/products/phone-placeholder.jpg" alt="Iphone 17 pro">
+                        <div class="product-info">
+                            <h3 class="product-title">Iphone 17 pro</h3>
+                            <div class="product-price" data-price="1500.99">1500,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="102">
+                        <img class="product-image" src="assets/img/products/phone-placeholder.jpg" alt="Iphone 16 pro">
+                        <div class="product-info">
+                            <h3 class="product-title">Iphone 16 pro</h3>
+                            <div class="product-price" data-price="1300.99">1300,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="103">
+                        <img class="product-image" src="assets/img/products/phone-placeholder.jpg" alt="Iphone 15 pro">
+                        <div class="product-info">
+                            <h3 class="product-title">Iphone 15 pro</h3>
+                            <div class="product-price" data-price="1100.99">1100,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="104">
+                        <img class="product-image" src="assets/img/products/phone-placeholder.jpg" alt="Iphone 14 pro">
+                        <div class="product-info">
+                            <h3 class="product-title">Iphone 14 pro</h3>
+                            <div class="product-price" data-price="1000.99">1000,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="105">
+                        <img class="product-image" src="assets/img/products/phone-placeholder.jpg" alt="Tecno Camon 40">
+                        <div class="product-info">
+                            <h3 class="product-title">Tecno Camon 40</h3>
+                            <div class="product-price" data-price="699.99">699,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="106">
+                        <img class="product-image" src="assets/img/products/phone-placeholder.jpg" alt="Tablette enfant">
+                        <div class="product-info">
+                            <h3 class="product-title">Tablette pour enfant</h3>
+                            <div class="product-price" data-price="699.99">699,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="107">
+                        <img class="product-image" src="assets/img/products/phone-placeholder.jpg" alt="Samsung S24 4G">
+                        <div class="product-info">
+                            <h3 class="product-title">Samsung S24 4G</h3>
+                            <div class="product-price" data-price="1000.00">1000 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>À propos de Digishop</h4>
+                    <p>Votre destination de confiance pour l'électronique.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Nous contacter</h4>
+                    <p>Email: contact@digishop.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+    <script src="assets/js/main.js"></script>
+</html>

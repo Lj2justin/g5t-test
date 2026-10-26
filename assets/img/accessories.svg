@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+  <rect width="64" height="64" rx="8" fill="#ffffff"/>
+  <!-- Router Base -->
+  <g transform="translate(12 20)" fill="#0d6efd">
+    <rect x="0" y="8" width="40" height="16" rx="3"/>
+    <rect x="4" y="12" width="2" height="8" fill="#ffffff"/>
+    <rect x="8" y="12" width="2" height="8" fill="#ffffff"/>
+    <!-- Antennes -->
+    <rect x="6" y="0" width="2" height="8"/>
+    <rect x="32" y="0" width="2" height="8"/>
+  </g>
+  <!-- Cercles de connectivité -->
+  <g stroke="#17c3b2" fill="none" transform="translate(8 16)">
+    <path d="M24 16 A 12 12 0 0 1 36 28" stroke-width="2"/>
+    <path d="M24 12 A 16 16 0 0 1 40 28" stroke-width="1.5"/>
+    <path d="M24 8 A 20 20 0 0 1 44 28" stroke-width="1"/>
+  </g>
+  <!-- Icône de surveillance -->
+  <g transform="translate(38 12)" fill="#ff6b6b">
+    <circle cx="6" cy="6" r="4"/>
+    <path d="M2 12 L10 12 L6 16 Z"/>
+  </g>
+</svg>

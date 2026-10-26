@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinateurs - Digishop</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Digishop</a>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="telephones.html">Téléphones</a>
+                    <a href="ordinateurs.html" class="active">Ordinateurs</a>
+                    <a href="accessoires.html">Accessoires</a>
+                    <a href="about.html">À propos</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="cart.php" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+                    <a href="login.php" class="account-icon">👤</a>
+                </div>
+                <div id="mini-cart" class="mini-cart" aria-hidden="true"></div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="category-header">
+            <div class="container">
+                <h1>Ordinateurs</h1>
+                <p class="lead">Portables et ordinateurs de bureau — choisissez la configuration adaptée à vos besoins.</p>
+            </div>
+        </section>
+
+        <section class="category-content">
+            <div class="container">
+                <p>Liste statique de quelques ordinateurs mis en avant. Pour la liste complète, rendez-vous sur la page dynamique.</p>
+
+                <div class="product-grid">
+                    <div class="product-card" data-product-id="201">
+                        <img class="product-image" src="assets/img/products/laptop-placeholder.jpg" alt="MacBook Pro Exemple">
+                        <div class="product-info">
+                            <h3 class="product-title">MacBook Pro Exemple</h3>
+                            <div class="product-price" data-price="5000.99">5 000,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card" data-product-id="202">
+                        <img class="product-image" src="assets/img/products/laptop-placeholder.jpg" alt="Dell XPS Exemple">
+                        <div class="product-info">
+                            <h3 class="product-title">Dell XPS Exemple</h3>
+                            <div class="product-price" data-price="1299.99">1 299,99 $</div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="add-to-cart">Ajouter au panier</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>À propos de Digishop</h4>
+                    <p>Votre destination de confiance pour l'électronique.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Nous contacter</h4>
+                    <p>Email: contact@digishop.com</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+    <script src="assets/js/main.js"></script>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Digishop</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html" class="logo">Digishop</a>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="category.php?cat=telephones">Téléphones</a>
+                    <a href="category.php?cat=ordinateurs">Ordinateurs</a>
+                    <a href="category.php?cat=accessoires">Accessoires</a>
+                    <a href="about.html">À propos</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="cart.php" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+                    <a href="login.php" class="account-icon">👤</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-hero">
+            <div class="container">
+                <h1>Contactez-nous</h1>
+                <p class="lead">Notre équipe est là pour vous aider</p>
+            </div>
+        </section>
+
+        <section class="contact-content">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-form-container">
+                        <h2>Envoyez-nous un message</h2>
+                        <form class="contact-form" action="php/send-contact.php" method="POST">
+                            <div class="form-group">
+                                <label for="name">Nom complet</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Sujet</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Choisissez un sujet</option>
+                                    <option value="question">Question générale</option>
+                                    <option value="support">Support technique</option>
+                                    <option value="order">Question sur une commande</option>
+                                    <option value="other">Autre</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">Envoyer le message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info">
+                        <h2>Informations de contact</h2>
+                        
+                        <div class="info-card">
+                            <div class="info-icon">📍</div>
+                            <h3>Notre adresse</h3>
+                            <p>123 Avenue du Commerce<br>Kinshasa, RDC</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <h3>Téléphone</h3>
+                            <p>+243 82 59 54 028</p>
+                            <p>Du lundi au samedi : 8h - 18h</p>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <h3>Email</h3>
+                            <p>contact@digishop.com</p>
+                            <p>support@digishop.com</p>
+                        </div>
+
+                        <div class="social-media">
+                            <h3>Suivez-nous</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Facebook</a>
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <h2>Questions fréquentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Comment suivre ma commande ?</h3>
+                        <p>Connectez-vous à votre compte et accédez à la section "Mes commandes" pour suivre votre colis en temps réel.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Quel est le délai de livraison ?</h3>
+                        <p>Les délais varient selon votre localisation. En général, comptez 2-3 jours ouvrés pour Kinshasa et 5-7 jours pour les autres provinces.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Comment retourner un produit ?</h3>
+                        <p>Vous disposez de 14 jours pour retourner un produit. Contactez notre service client pour initier le processus de retour.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>À propos de Digishop</h4>
+                    <p>Votre destination de confiance pour l'électronique.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Confidentialité</a></li>
+                        <li><a href="terms.html">CGV</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email">
+                        <button type="submit">S'abonner</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h4>Nous contacter</h4>
+                    <p>Email: contact@digishop.com</p>
+                    <p>Tél: +243 82 59 54 028</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
